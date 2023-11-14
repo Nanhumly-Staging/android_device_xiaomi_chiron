@@ -30,8 +30,4 @@
     <string name="config_rounded_mask" translatable="false">
         M0,50V0H50A50,50 0,0 0,0 50Z
     </string>
-
-    <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
-    <dimen name="config_rounded_mask_size">50px</dimen>
 </resources>
-
