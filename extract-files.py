@@ -18,6 +18,8 @@ from extract_utils.fixups_blob import (
 )
 
 namespace_imports = [
+    'hardware/qcom-caf/common/libqti-perfd-client',
+    'hardware/xiaomi',
     'vendor/xiaomi/msm8998-common',
 ]
 
@@ -35,7 +37,6 @@ module = ExtractUtilsModule(
     'chiron',
     'xiaomi',
     blob_fixups=blob_fixups,
-    check_elf=False,
     namespace_imports=namespace_imports,
 )
 
