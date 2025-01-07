@@ -18,8 +18,8 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio firmware
-etc/firmware/tas2559_s_uCDSP.bin:vendor/firmware/tas2559_s_uCDSP.bin
-etc/firmware/tas2559_uCDSP.bin:vendor/firmware/tas2559_uCDSP.bin
+system/etc/firmware/tas2559_s_uCDSP.bin:vendor/firmware/tas2559_s_uCDSP.bin
+system/etc/firmware/tas2559_uCDSP.bin:vendor/firmware/tas2559_uCDSP.bin
 
 # Camera
 vendor/etc/camera/dualcamera.png
@@ -132,7 +132,7 @@ vendor/lib/libmmcamera_chiron_ov5675_primax.so
 vendor/lib/libmmcamera_chiron_ov5675_qtech.so
 
 # Display calibration
-etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml:vendor/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml
+system/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml:vendor/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.msm8998.so
@@ -141,7 +141,7 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 
 # Sensors
-etc/elliptic_sensor.xml:vendor/etc/elliptic.xml
+system/etc/elliptic_sensor.xml:vendor/etc/elliptic.xml
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/lib64/sensors.elliptic.so
