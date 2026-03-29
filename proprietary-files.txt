@@ -142,6 +142,7 @@ vendor/lib64/libgf_hal.so
 
 # Sensors
 system/etc/elliptic_sensor.xml:vendor/etc/elliptic.xml
+vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/lib64/sensors.elliptic.so
 

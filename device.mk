@@ -37,9 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnotifyaudiohal:64
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
 $(call soong_config_set,qtiaudio,feature_elliptic_ultrasound,true)
 
 # Wifi
