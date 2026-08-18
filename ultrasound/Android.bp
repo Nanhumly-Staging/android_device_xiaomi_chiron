@@ -4,10 +4,35 @@ cc_library_shared {
         "libnotifyaudiohal.cpp",
     ],
     shared_libs: [
+        "libultrasound",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libultrasound",
+    srcs: [
+        "libultrasound.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "liblog",
+    ],
+    vendor: true,
+}
+
+cc_binary {
+    name: "ultrasound-daemon",
+    srcs: [
+        "ultrasound-daemon.cpp",
+    ],
+    shared_libs: [
         "android.hardware.audio@7.1",
+        "libcutils",
         "libhidlbase",
         "liblog",
         "libutils",
     ],
+    init_rc: ["ultrasound-daemon.rc"],
     vendor: true,
 }

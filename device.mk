@@ -35,7 +35,11 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libnotifyaudiohal:64
+    ultrasound-daemon
+
+PRODUCT_PACKAGES += \
+    libnotifyaudiohal:64 \
+    libultrasound:64
 
 $(call soong_config_set,qtiaudio,feature_elliptic_ultrasound,true)
 

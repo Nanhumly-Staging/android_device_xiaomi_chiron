@@ -1,0 +1,5 @@
+service vendor.ultrasound-daemon /vendor/bin/ultrasound-daemon
+    class hal
+    user system
+    group system audio
+    socket audio_hw_socket seqpacket 0660 system system

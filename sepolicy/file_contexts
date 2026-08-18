@@ -3,3 +3,5 @@
 
 # Ultrasound
 /dev/elliptic(.*)?                                            u:object_r:sound_device:s0
+/dev/socket/audio_hw_socket                                   u:object_r:audio_socket:s0
+/vendor/bin/ultrasound-daemon                                 u:object_r:ultrasound_daemon_exec:s0

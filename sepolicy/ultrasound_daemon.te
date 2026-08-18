@@ -1,0 +1,7 @@
+type ultrasound_daemon, domain;
+type ultrasound_daemon_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(ultrasound_daemon)
+hal_client_domain(ultrasound_daemon, hal_audio)
+
+allow ultrasound_daemon self:unix_stream_socket create_stream_socket_perms;

@@ -1,3 +1,4 @@
-hal_client_domain(hal_sensors_default, hal_audio)
+allow hal_sensors_default audio_socket:sock_file rw_file_perms;
+unix_socket_connect(hal_sensors_default, audio, ultrasound_daemon)
 
 allow hal_sensors_default sound_device:chr_file { ioctl read open };
